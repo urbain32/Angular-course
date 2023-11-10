@@ -14,13 +14,17 @@
   <body>
     <h1>Filters</h1>
     <div ng-controller="MsgController">
-      {{name}} has a message for you: <br />
+      {{name}} has a message for you:
+      <br />
+      <br />
       {{sayMessage()}}
+      <br />
+      <br />
       <div>
         <button ng-click="feedYaakov()">Feed Yaakov</button>
         Cost: {{ cookieCost | currency : "FBU":4 }}
         <br />
-
+        <br />
         <img ng-src="images/yaakov_{{stateOfBeing}}.png" />
       </div>
     </div>
