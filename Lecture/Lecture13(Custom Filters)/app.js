@@ -38,4 +38,12 @@
       return input;
     };
   }
+  function TruthFilter() {
+    // the func must return another function
+    return function (input, target, replace) {
+      input = input || "";
+      input = input.replace(target, replace);
+      return input;
+    };
+  }
 })();
