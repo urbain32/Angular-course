@@ -24,6 +24,8 @@
       <!-- we can also use our custom filter without passing it in inject and controller -->
       Truth:{{sayLoveMessage() | truth:'healthy':'cookies'}}
       <br />
+      Big Truth:{{sayLoveMessage() | truth:'healthy':'cookies'|uppercase}}
+      <br />
       <br />
       <div>
         <button ng-click="feedYaakov()">Feed Yaakov</button>
