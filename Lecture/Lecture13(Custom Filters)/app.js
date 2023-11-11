@@ -5,6 +5,7 @@
     .module("MsgApp", [])
     .controller("MsgController", MsgController)
     // step 2 is calling our filter
+    // loves is what our func will be called in angular
     .filter("loves", LovesFilter);
 
   MsgController.$inject = ["$scope", "$filter"];
