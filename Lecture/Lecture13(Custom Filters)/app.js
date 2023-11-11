@@ -20,7 +20,7 @@
     };
   }
   //step one creating the custom filter function
-  function LoveFilter() {
+  function LovesFilter() {
     // the func must return another function
     return function (input) {
       input = input || "";
