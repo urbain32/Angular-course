@@ -19,6 +19,11 @@
       var output = $filter("uppercase")(msg);
       return output;
     };
+    $scope.sayLoveMessage = function () {
+      var msg = "Yaakov likes to eat healthy snacks at night!";
+      msg = lovesFilter(msg);
+      return msg;
+    };
 
     $scope.feedYaakov = function () {
       $scope.stateOfBeing = "fed";
