@@ -8,8 +8,8 @@
     // loves is what our func will be called in angular
     .filter("loves", LovesFilter);
 
-  MsgController.$inject = ["$scope", "$filter"];
-  function MsgController($scope, $filter) {
+  MsgController.$inject = ["$scope", "$filter", "lovesFilter"];
+  function MsgController($scope, $filter, lovesFilter) {
     $scope.name = "Yaakov";
     $scope.stateOfBeing = "hungry";
     $scope.cookieCost = 0.45;
