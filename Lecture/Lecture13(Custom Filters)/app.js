@@ -1,7 +1,11 @@
 (function () {
   "use strict";
 
-  angular.module("MsgApp", []).controller("MsgController", MsgController);
+  angular
+    .module("MsgApp", [])
+    .controller("MsgController", MsgController)
+    // step 2 is calling our filter
+    .filter("loves", LovesFilter);
 
   MsgController.$inject = ["$scope", "$filter"];
   function MsgController($scope, $filter) {
