@@ -19,7 +19,10 @@
       <br />
       Original :{{sayMessage()}}
       <br />
-      New message:{{sayLoveMessage()}}
+      Loves:{{sayLoveMessage()}}
+      <br />
+      <!-- we can also use our custom filter without passing it in inject and controller -->
+      Truth:{{sayLoveMessage() | truth:'healthy':'cookies'}}
       <br />
       <br />
       <div>
