@@ -22,6 +22,8 @@
   //step one creating the custom filter function
   function LoveFilter() {
     // the func must return another function
-    return function () {};
+    return function (input) {
+      input = input || "";
+    };
   }
 })();
