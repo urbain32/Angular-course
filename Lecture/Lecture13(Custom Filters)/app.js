@@ -25,6 +25,7 @@
     return function (input) {
       input = input || "";
       input = input.replace("likes", "love");
+      return input;
     };
   }
 })();
