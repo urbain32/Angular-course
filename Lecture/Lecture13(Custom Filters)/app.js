@@ -19,4 +19,9 @@
       $scope.stateOfBeing = "fed";
     };
   }
+  //step one creating the custom filter function
+  function LoveFilter() {
+    // the func must return another function
+    return function () {};
+  }
 })();
