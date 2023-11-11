@@ -24,6 +24,7 @@
     // the func must return another function
     return function (input) {
       input = input || "";
+      input = input.replace("likes", "love");
     };
   }
 })();
