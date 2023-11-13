@@ -23,6 +23,7 @@
     $scope.$watch(function () {
       console.log("Digest loop fired");
     });
+    //is not good to use $scope.$watch in a controller coz we can use {{someprop}}to watch
     // $scope.$watch("onceCounter", function (newValue, oldValue) {
     //   console.log("Old value:", oldValue);
     //   console.log("New value:", newValue);
