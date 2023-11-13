@@ -6,8 +6,9 @@
     .controller("CounterController", CounterController);
 
   CounterController.$inject = ["$scope", "$timeout"];
-  function CounterController($scope) {
+  function CounterController($scope, $timeout) {
     $scope.counter = 0;
+    // usin
     // using $apply to call digest
     $scope.upCounter = function () {
       setTimeout(() => {
