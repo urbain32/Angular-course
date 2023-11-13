@@ -22,5 +22,9 @@
       console.log("Old value:", oldValue);
       console.log("New value:", newValue);
     });
+    $scope.$watch("counter", function (newValue, oldValue) {
+      console.log("Old value:", oldValue);
+      console.log("New value:", newValue);
+    });
   }
 })();
