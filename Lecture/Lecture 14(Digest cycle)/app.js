@@ -8,16 +8,23 @@
   CounterController.$inject = ["$scope", "$timeout"];
   function CounterController($scope, $timeout) {
     $scope.counter = 0;
-    // usin
-    // using $apply to call digest
+    // using angulaar time out
     $scope.upCounter = function () {
-      setTimeout(() => {
-        $scope.$apply(function () {
-          $scope.counter++;
-          console.log("counter increased");
-        });
+      $timeout(() => {
+        $scope.counter++;
+        console.log("counter increased");
       }, 2000);
     };
+
+    // using $apply to call digest
+    // $scope.upCounter = function () {
+    //   setTimeout(() => {
+    //     $scope.$apply(function () {
+    //       $scope.counter++;
+    //       console.log("counter increased");
+    //     });
+    //   }, 2000);
+    // };
     // $scope.upCounter = function () {
     //   setTimeout(() => {
     //     $scope.counter++;
