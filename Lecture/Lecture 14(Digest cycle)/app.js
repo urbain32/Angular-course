@@ -14,5 +14,9 @@
     $scope.countOnce = function () {
       $scope.onceCounter = 1;
     };
+    $scope.$watch("onceCounter", function (newValue, oldValue) {
+      console.log("Old value:", oldValue);
+      console.log("New value:", newValue);
+    });
   }
 })();
