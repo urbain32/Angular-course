@@ -8,13 +8,22 @@
   CounterController.$inject = ["$scope"];
   function CounterController($scope) {
     $scope.counter = 0;
+    // using $apply to call digest
     $scope.upCounter = function () {
       setTimeout(() => {
-        $scope.counter++;
-        console.log("counter increased");
-        // for our counter to be calledwe have to call digest function manually
-        $scope.$digest();
+        $scope.$apply(function () {
+          $scope.counter++;
+          console.log("counter increased");
+        });
       }, 2000);
     };
+    // $scope.upCounter = function () {
+    //   setTimeout(() => {
+    //     $scope.counter++;
+    //     console.log("counter increased");
+    //     // for our counter to be calledwe have to call digest function manually
+    //     $scope.$digest();
+    //   }, 2000);
+    // };
   }
 })();
