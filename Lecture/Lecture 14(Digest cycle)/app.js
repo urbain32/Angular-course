@@ -5,7 +5,7 @@
     .module("CounterApp", [])
     .controller("CounterController", CounterController);
 
-  CounterController.$inject = ["$scope"];
+  CounterController.$inject = ["$scope", "$timeout"];
   function CounterController($scope) {
     $scope.counter = 0;
     // using $apply to call digest
