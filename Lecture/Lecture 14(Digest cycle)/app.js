@@ -9,6 +9,7 @@
   function CounterController($scope) {
     $scope.onceCounter = 0;
     $scope.counter = 0;
+    $scope.name = "Urban";
     $scope.showNumberOfWatchers = function () {
       console.log("Number of watchers:", $scope.$$watchersCount);
     };
@@ -20,7 +21,7 @@
     };
     // the way to watch which digist cycle is fired
     $scope.$watch(function () {
-      console.log("Digest file fired");
+      console.log("Digest loop fired");
     });
     // $scope.$watch("onceCounter", function (newValue, oldValue) {
     //   console.log("Old value:", oldValue);
