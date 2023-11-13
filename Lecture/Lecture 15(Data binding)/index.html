@@ -16,7 +16,7 @@
     <div ng-controller="BindingController">
       <button ng-click="showNumberOfWatchers()">Log # of Watchers</button>
       <button ng-click="setFullName()">Set Full Name</button><br />
-
+      <!-- {{:: prop }}  this will bind our prop to one time bind which means it cant be updated on the ui-->
       Full name is: {{ :: fullName }} <br />
       <button ng-click="logFirstName()">Log First Name</button><br />
       <button ng-click="logFullName()">Log Full Name</button><br />
