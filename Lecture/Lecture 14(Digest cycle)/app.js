@@ -18,13 +18,13 @@
     $scope.upCounter = function () {
       $scope.counter++;
     };
-    $scope.$watch("onceCounter", function (newValue, oldValue) {
-      console.log("Old value:", oldValue);
-      console.log("New value:", newValue);
-    });
-    $scope.$watch("counter", function (newValue, oldValue) {
-      console.log("Old value:", oldValue);
-      console.log("New value:", newValue);
-    });
+    // $scope.$watch("onceCounter", function (newValue, oldValue) {
+    //   console.log("Old value:", oldValue);
+    //   console.log("New value:", newValue);
+    // });
+    // $scope.$watch("counter", function (newValue, oldValue) {
+    //   console.log("Old value:", oldValue);
+    //   console.log("New value:", newValue);
+    // });
   }
 })();
