@@ -7,15 +7,7 @@
 
   CounterController.$inject = ["$scope"];
   function CounterController($scope) {
-    $scope.onceCounter = 0;
     $scope.counter = 0;
-    $scope.name = "Urban";
-    $scope.showNumberOfWatchers = function () {
-      console.log("Number of watchers:", $scope.$$watchersCount);
-    };
-    $scope.countOnce = function () {
-      $scope.onceCounter = 1;
-    };
     $scope.upCounter = function () {
       $scope.counter++;
     };
@@ -23,14 +15,5 @@
     $scope.$watch(function () {
       console.log("Digest loop fired");
     });
-    //is not good to use $scope.$watch in a controller coz we can use {{someprop}}to watch
-    // $scope.$watch("onceCounter", function (newValue, oldValue) {
-    //   console.log("Old value:", oldValue);
-    //   console.log("New value:", newValue);
-    // });
-    // $scope.$watch("counter", function (newValue, oldValue) {
-    //   console.log("Old value:", oldValue);
-    //   console.log("New value:", newValue);
-    // });
   }
 })();
