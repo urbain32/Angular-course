@@ -6,5 +6,7 @@
     .controller("CounterController", CounterController);
 
   CounterController.$inject = ["$scope"];
-  function CounterController($scope) {}
+  function CounterController($scope) {
+    $scope.showNumberOfWatchers = function () {};
+  }
 })();
