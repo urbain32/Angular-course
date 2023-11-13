@@ -18,6 +18,10 @@
     $scope.upCounter = function () {
       $scope.counter++;
     };
+    // the way to watch which digist cycle is fired
+    $scope.$watch(function () {
+      console.log("Digest file fired");
+    });
     // $scope.$watch("onceCounter", function (newValue, oldValue) {
     //   console.log("Old value:", oldValue);
     //   console.log("New value:", newValue);
