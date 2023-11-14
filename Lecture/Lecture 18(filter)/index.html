@@ -18,7 +18,8 @@
       <h3>Shopping List:</h3>
       <input type="text" ng-model="search" />
       <ul>
-        <li ng-repeat="item in shoppingList">{{ item }}</li>
+        <!-- to search we filter the item -->
+        <li ng-repeat="item in shoppingList | filter:search">{{ item }}</li>
       </ul>
     </div>
   </body>
