@@ -42,6 +42,7 @@
     $scope.addItem = function () {
       var newItem = {
         name: $scope.newItemName,
+        quantity: $scope.newItemQuantity,
       };
     };
   }
