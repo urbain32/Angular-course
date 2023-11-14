@@ -4,15 +4,22 @@
     <meta charset="utf-8" />
     <script src="angular.min.js"></script>
     <script src="app.js"></script>
-    <script src="filter.js"></script>
     <style>
       body {
         font-size: 1.2em;
       }
     </style>
-    <title>Filter Array</title>
+    <title>ng-repeat</title>
   </head>
   <body>
-    <h1>Filter Array example</h1>
+    <h1>ng-repeat</h1>
+    <div ng-controller="ShoppingListController">
+      <!-- Searchable Shopping List: -->
+      <h3>Shopping List:</h3>
+      <input type="text" ng-model="search" />
+      <ul>
+        <li ng-repeat="item in shoppingList | filter : search">{{ item }}</li>
+      </ul>
+    </div>
   </body>
 </html>
