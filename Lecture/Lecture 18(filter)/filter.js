@@ -5,3 +5,4 @@ console.log("Number array: ", numberArray);
 var filterNumberArray = numberArray.filter(function (value) {
   return value > 5;
 });
+console.log("filtered Number Array: ", filterNumberArray);
