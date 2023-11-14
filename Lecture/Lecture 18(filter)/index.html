@@ -14,11 +14,11 @@
   <body>
     <h1>ng-repeat</h1>
     <div ng-controller="ShoppingListController">
-      <!-- Searchable Shopping List: -->
+      <!-- Searching data in angular js: -->
       <h3>Shopping List:</h3>
       <input type="text" ng-model="search" />
       <ul>
-        <li ng-repeat="item in shoppingList | filter : search">{{ item }}</li>
+        <li ng-repeat="item in shoppingList">{{ item }}</li>
       </ul>
     </div>
   </body>
