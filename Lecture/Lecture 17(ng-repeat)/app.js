@@ -39,6 +39,10 @@
   function ShoppingListController($scope) {
     $scope.shoppingList1 = shoppingList1;
     $scope.shoppingList2 = shoppingList2;
-    $scope.addItem = function () {};
+    $scope.addItem = function () {
+      var newItem = {
+        name: $scope.newItemName,
+      };
+    };
   }
 })();
