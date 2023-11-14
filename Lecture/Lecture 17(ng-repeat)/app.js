@@ -44,6 +44,8 @@
         name: $scope.newItemName,
         quantity: $scope.newItemQuantity,
       };
+      // pushing our newItem in our array
+      $scope.shoppingList2.push(newItem);
     };
   }
 })();
