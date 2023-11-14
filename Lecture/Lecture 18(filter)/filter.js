@@ -7,3 +7,15 @@ function filterFunction(value) {
 }
 var filterNumberArray = numberArray.filter(filterFunction);
 console.log("filtered Number Array: ", filterNumberArray);
+
+// filtering an array of string
+var shoppingList = [
+  "Milk",
+  "Donuts",
+  "Cookies",
+  "Chocolate",
+  "Peanut Butter",
+  "Pepto Bismol",
+  "Pepto Bismol (Chocolate flavor)",
+  "Pepto Bismol (Cookie flavor)",
+];
