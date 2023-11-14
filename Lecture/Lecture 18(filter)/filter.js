@@ -19,3 +19,4 @@ var shoppingList = [
   "Pepto Bismol (Chocolate flavor)",
   "Pepto Bismol (Cookie flavor)",
 ];
+var searchValue = "Bismol";
