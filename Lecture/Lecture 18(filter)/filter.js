@@ -23,3 +23,6 @@ var searchValue = "Bismol";
 function filterSearchedValue(value) {
   return value === searchValue;
 }
+
+var filterShoppingList = shoppingList.filter(filterSearchedValue);
+console.log("filterShoppingList: ", filterShoppingList);
