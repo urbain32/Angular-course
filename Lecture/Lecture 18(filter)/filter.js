@@ -21,7 +21,7 @@ var shoppingList = [
 ];
 var searchValue = "Bismol";
 function filterSearchedValue(value) {
-  return value === searchValue;
+  return value.indexOf(searchValue) !== -1;
 }
 
 var filterShoppingList = shoppingList.filter(filterSearchedValue);
