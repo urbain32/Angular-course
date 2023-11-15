@@ -29,9 +29,9 @@ console.log("child: ", child);
 // checking if our vhild.value is equal to our parent .value
 console.log("child.obj === parent.obj ? ", child.obj === parent.obj);
 //
-// var grandChild = Object.create(child);
-// console.log("Grandchild: ", grandChild);
-// grandChild.walk();
+var grandChild = Object.create(child);
+console.log("Grandchild: ", grandChild);
+grandChild.walk();
 
 //** Function constructors
 // See my other course: HTML, CSS, and Javascript for Web Developers
