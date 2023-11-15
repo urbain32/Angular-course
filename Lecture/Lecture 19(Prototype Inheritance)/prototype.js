@@ -8,8 +8,7 @@ var parent = {
     console.log("walking!");
   },
 };
-//
-// var child = Object.create(parent);
+var child = Object.create(parent);
 // console.log("CHILD - child.value: ", child.value);
 // console.log("CHILD - child.obj.objValue: ", child.obj.objValue);
 // console.log("PARENT - parent.value: ", parent.value);
