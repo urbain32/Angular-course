@@ -1,37 +1,37 @@
 //**  Prototypal inheritance
-var parent = {
-  value: "parentValue",
-  obj: {
-    objValue: "parentObjValue",
-  },
-  walk: function () {
-    console.log("walking!");
-  },
-};
-var child = Object.create(parent);
-console.log("CHILD - child.value: ", child.value);
-console.log("CHILD - child.obj.objValue: ", child.obj.objValue);
-console.log("PARENT - parent.value: ", parent.value);
-console.log("PARENT - parent.obj.objValue: ", parent.obj.objValue);
-console.log("parent: ", parent);
-console.log("child: ", child);
-//
-child.value = "childValue";
-child.obj.objValue = "childObjValue";
-console.log("*** CHANGED: child.value = 'childValue'");
-console.log("*** CHANGED: child.obj.objValue = 'childObjValue'");
-console.log("CHILD - child.value: ", child.value);
-console.log("CHILD - child.obj.objValue: ", child.obj.objValue);
-console.log("PARENT - parent.value: ", parent.value);
-console.log("PARENT - parent.obj.objValue: ", parent.obj.objValue);
-console.log("parent: ", parent);
-console.log("child: ", child);
+// var parent = {
+//   value: "parentValue",
+//   obj: {
+//     objValue: "parentObjValue",
+//   },
+//   walk: function () {
+//     console.log("walking!");
+//   },
+// };
+// var child = Object.create(parent);
+// console.log("CHILD - child.value: ", child.value);
+// console.log("CHILD - child.obj.objValue: ", child.obj.objValue);
+// console.log("PARENT - parent.value: ", parent.value);
+// console.log("PARENT - parent.obj.objValue: ", parent.obj.objValue);
+// console.log("parent: ", parent);
+// console.log("child: ", child);
+// //
+// child.value = "childValue";
+// child.obj.objValue = "childObjValue";
+// console.log("*** CHANGED: child.value = 'childValue'");
+// console.log("*** CHANGED: child.obj.objValue = 'childObjValue'");
+// console.log("CHILD - child.value: ", child.value);
+// console.log("CHILD - child.obj.objValue: ", child.obj.objValue);
+// console.log("PARENT - parent.value: ", parent.value);
+// console.log("PARENT - parent.obj.objValue: ", parent.obj.objValue);
+// console.log("parent: ", parent);
+// console.log("child: ", child);
 // checking if our vhild.value is equal to our parent .value
-console.log("child.obj === parent.obj ? ", child.obj === parent.obj);
+// console.log("child.obj === parent.obj ? ", child.obj === parent.obj);
 //
-var grandChild = Object.create(child);
-console.log("Grandchild: ", grandChild);
-grandChild.walk();
+// var grandChild = Object.create(child);
+// console.log("Grandchild: ", grandChild);
+// grandChild.walk();
 
 //** Function constructors
 // See my other course: HTML, CSS, and Javascript for Web Developers
