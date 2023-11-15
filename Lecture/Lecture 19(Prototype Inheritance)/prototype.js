@@ -16,7 +16,7 @@ console.log("PARENT - parent.obj.objValue: ", parent.obj.objValue);
 console.log("parent: ", parent);
 console.log("child: ", child);
 //
-// child.value = "childValue";
+child.value = "childValue";
 // child.obj.objValue = "childObjValue";
 // console.log("*** CHANGED: child.value = 'childValue'");
 // console.log("*** CHANGED: child.obj.objValue = 'childObjValue'");
