@@ -41,8 +41,8 @@ function Dog(name) {
   console.log("'this' is: ", this);
 }
 //
-// var myDog = new Dog("Max");
-// console.log("myDog: ", myDog);
+var myDog = new Dog("Max");
+console.log("myDog: ", myDog);
 //
 // // Not being used as a function constructor
 // Dog("Max2");
