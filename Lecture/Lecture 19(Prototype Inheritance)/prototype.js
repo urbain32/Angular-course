@@ -26,8 +26,8 @@ console.log("PARENT - parent.value: ", parent.value);
 console.log("PARENT - parent.obj.objValue: ", parent.obj.objValue);
 console.log("parent: ", parent);
 console.log("child: ", child);
-//
-// console.log("child.obj === parent.obj ? ", child.obj === parent.obj);
+// checking if our vhild.value is equal to our parent .value
+console.log("child.obj === parent.obj ? ", child.obj === parent.obj);
 //
 // var grandChild = Object.create(child);
 // console.log("Grandchild: ", grandChild);
