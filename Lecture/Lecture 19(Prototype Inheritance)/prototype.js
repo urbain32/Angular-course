@@ -44,5 +44,5 @@ function Dog(name) {
 var myDog = new Dog("Max");
 console.log("myDog: ", myDog);
 //
-// // Not being used as a function constructor
-// Dog("Max2");
+// Not being used as a function constructor
+Dog("Max2");
