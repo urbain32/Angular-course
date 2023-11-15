@@ -9,12 +9,12 @@ var parent = {
   },
 };
 var child = Object.create(parent);
-// console.log("CHILD - child.value: ", child.value);
-// console.log("CHILD - child.obj.objValue: ", child.obj.objValue);
-// console.log("PARENT - parent.value: ", parent.value);
-// console.log("PARENT - parent.obj.objValue: ", parent.obj.objValue);
-// console.log("parent: ", parent);
-// console.log("child: ", child);
+console.log("CHILD - child.value: ", child.value);
+console.log("CHILD - child.obj.objValue: ", child.obj.objValue);
+console.log("PARENT - parent.value: ", parent.value);
+console.log("PARENT - parent.obj.objValue: ", parent.obj.objValue);
+console.log("parent: ", parent);
+console.log("child: ", child);
 //
 // child.value = "childValue";
 // child.obj.objValue = "childObjValue";
