@@ -1,28 +1,49 @@
-var numberArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-console.log("Number array: ", numberArray);
+//**  Prototypal inheritance
+var parent = {
+  value: "parentValue",
+  obj: {
+    objValue: "parentObjValue",
+  },
+  walk: function () {
+    console.log("walking!");
+  },
+};
+//
+// var child = Object.create(parent);
+// console.log("CHILD - child.value: ", child.value);
+// console.log("CHILD - child.obj.objValue: ", child.obj.objValue);
+// console.log("PARENT - parent.value: ", parent.value);
+// console.log("PARENT - parent.obj.objValue: ", parent.obj.objValue);
+// console.log("parent: ", parent);
+// console.log("child: ", child);
+//
+// child.value = "childValue";
+// child.obj.objValue = "childObjValue";
+// console.log("*** CHANGED: child.value = 'childValue'");
+// console.log("*** CHANGED: child.obj.objValue = 'childObjValue'");
+// console.log("CHILD - child.value: ", child.value);
+// console.log("CHILD - child.obj.objValue: ", child.obj.objValue);
+// console.log("PARENT - parent.value: ", parent.value);
+// console.log("PARENT - parent.obj.objValue: ", parent.obj.objValue);
+// console.log("parent: ", parent);
+// console.log("child: ", child);
+//
+// console.log("child.obj === parent.obj ? ", child.obj === parent.obj);
+//
+// var grandChild = Object.create(child);
+// console.log("Grandchild: ", grandChild);
+// grandChild.walk();
 
-// filtering an array
-function filterFunction(value) {
-  return value > 5;
-}
-var filterNumberArray = numberArray.filter(filterFunction);
-console.log("filtered Number Array: ", filterNumberArray);
-
-// filtering an array of string
-var shoppingList = [
-  "Milk",
-  "Donuts",
-  "Cookies",
-  "Chocolate",
-  "Peanut Butter",
-  "Pepto Bismol",
-  "Pepto Bismol (Chocolate flavor)",
-  "Pepto Bismol (Cookie flavor)",
-];
-var searchValue = "Bismol";
-function filterSearchedValue(value) {
-  return value.indexOf(searchValue) !== -1;
-}
-
-var filterShoppingList = shoppingList.filter(filterSearchedValue);
-console.log("filterShoppingList: ", filterShoppingList);
+//** Function constructors
+// See my other course: HTML, CSS, and Javascript for Web Developers
+// Lecture #48
+// function Dog(name) {
+//   this.name = name;
+//   console.log("'this' is: ", this);
+// }
+//
+// var myDog = new Dog("Max");
+// console.log("myDog: ", myDog);
+//
+// // Not being used as a function constructor
+// Dog("Max2");
