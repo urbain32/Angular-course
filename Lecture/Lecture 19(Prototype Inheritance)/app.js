@@ -21,7 +21,7 @@
     console.log("CHILD $scope: ", $scope);
     //creating a variable parentValue inour child controller
     $scope.parentValue = 5;
-    // console.log("*** CHANGED: $scope.parentValue = 5 ***");
+    console.log("*** CHANGED: $scope.parentValue = 5 ***");
     // console.log("$scope.parentValue: ", $scope.parentValue);
     // console.log($scope);
     //
