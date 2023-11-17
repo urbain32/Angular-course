@@ -17,7 +17,7 @@
 
   ChildController1.$inject = ["$scope"];
   function ChildController1($scope) {
-    // console.log("$scope.parentValue: ", $scope.parentValue);
+    console.log("$scope.parentValue: ", $scope.parentValue);
     // console.log("CHILD $scope: ", $scope);
     //
     // $scope.parentValue = 5;
