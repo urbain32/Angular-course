@@ -40,6 +40,7 @@
     parent.value = 1;
   }
   ChildController2.$inject = ["$scope"];
+  // we pass the scope coz we are going to use it to display
   function ChildController2($scope) {
     var child = this;
     child.value = 5;
