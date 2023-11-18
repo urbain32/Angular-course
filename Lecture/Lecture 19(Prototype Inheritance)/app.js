@@ -34,7 +34,7 @@
     console.log("$scope.$parent.parentValue: ", $scope.$parent.parentValue);
   }
 
-  // ** Controller As syntax
+  //Controller As syntax
   function ParentController2() {
     var parent = this;
     parent.value = 1;
