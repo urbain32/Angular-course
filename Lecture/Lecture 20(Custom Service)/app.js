@@ -25,6 +25,8 @@
     var showList = this;
 
     showList.items = ShoppingListService.getItems();
+    //calling our removeItem function in our showList
+    showList.removeItem = function () {};
   }
 
   function ShoppingListService() {
