@@ -41,7 +41,9 @@
       items.push(item);
     };
     // function to remove items
-    service.removeItem = function (itemIndex) {};
+    service.removeItem = function (itemIndex) {
+      items.slice(itemIndex, 1);
+    };
 
     service.getItems = function () {
       return items;
