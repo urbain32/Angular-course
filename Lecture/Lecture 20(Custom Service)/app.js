@@ -46,7 +46,8 @@
     };
     // function to remove items
     service.removeItem = function (itemIndex) {
-      items.slice(itemIndex, 1);
+      // the function is splice (takes the index , how many yo want to delete)
+      items.splice(itemIndex, 1);
     };
 
     service.getItems = function () {
