@@ -29,6 +29,7 @@
 
     <div ng-controller="ShoppingListShowController as showList">
       <ol>
+        <!-- we use ng-repeat to map data in angular -->
         <li ng-repeat="item in showList.items">
           {{ item.quantity }} of {{ item.name }}
         </li>
