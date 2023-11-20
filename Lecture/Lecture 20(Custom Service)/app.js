@@ -21,6 +21,7 @@
 
   ShoppingListShowController.$inject = ["ShoppingListService"];
   function ShoppingListShowController(ShoppingListService) {
+    // we "this" so that we can attach it to other variable
     var showList = this;
 
     showList.items = ShoppingListService.getItems();
