@@ -40,6 +40,8 @@
       };
       items.push(item);
     };
+    // function to remove items
+    service.removeItem = function (itemIndex) {};
 
     service.getItems = function () {
       return items;
