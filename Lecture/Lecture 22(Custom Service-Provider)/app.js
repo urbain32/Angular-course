@@ -64,6 +64,7 @@
     var provider = this;
 
     provider.defaults = {
+      // this will limit the number of our add items to 10
       maxItems: 10,
     };
 
