@@ -59,7 +59,7 @@
       return items;
     };
   }
-
+  // creating the provider
   function ShoppingListServiceProvider() {
     var provider = this;
 
