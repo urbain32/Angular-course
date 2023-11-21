@@ -5,7 +5,8 @@
     .module("ShoppingListApp", [])
     .controller("ShoppingListController", ShoppingListController)
     // calling our provider
-    .provider("ShoppingListService", ShoppingListServiceProvider);
+    .provider("ShoppingListService", ShoppingListServiceProvider)
+    .config(Config);
 
   ShoppingListController.$inject = ["ShoppingListService"];
   function ShoppingListController(ShoppingListService) {
