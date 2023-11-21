@@ -7,6 +7,7 @@
     // calling our provider
     .provider("ShoppingListService", ShoppingListServiceProvider)
     .config(Config);
+  Config.$inject = ["ShoppingListServiceProvider"];
 
   ShoppingListController.$inject = ["ShoppingListService"];
   function ShoppingListController(ShoppingListService) {
