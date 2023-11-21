@@ -22,7 +22,7 @@
           <button ng-click="list.removeItem($index);">Remove Item</button>
         </li>
       </ol>
-      <!-- this will show if there is an error -->
+      <!-- this will show if there is an error ng-show and hide we use them if we still want to manipulate the DOM -->
       <div class="error" ng-if="list.errorMessage">
         Error: {{list.errorMessage}}
       </div>
