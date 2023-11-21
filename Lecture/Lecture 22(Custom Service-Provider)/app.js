@@ -8,7 +8,9 @@
     .provider("ShoppingListService", ShoppingListServiceProvider)
     .config(Config);
   Config.$inject = ["ShoppingListServiceProvider"];
-  function Config(ShoppingListServiceProvider) {}
+  function Config(ShoppingListServiceProvider) {
+    ShoppingListServiceProvider.defaults.maxItems = 2;
+  }
 
   ShoppingListController.$inject = ["ShoppingListService"];
   function ShoppingListController(ShoppingListService) {
