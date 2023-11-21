@@ -86,7 +86,7 @@
       return items;
     };
   }
-
+  // where we created our own shoppingListFactory
   function ShoppingListFactory() {
     var factory = function (maxItems) {
       return new ShoppingListService(maxItems);
