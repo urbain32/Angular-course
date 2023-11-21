@@ -5,6 +5,7 @@
     .module("ControllerAsApp", [])
     .controller("ShoppingListController1", ShoppingListController1)
     .controller("ShoppingListController2", ShoppingListController2)
+    // declaring the factory we want to create
     .factory("ShoppingListFactory", ShoppingListFactory);
 
   // LIST #1 - controller
