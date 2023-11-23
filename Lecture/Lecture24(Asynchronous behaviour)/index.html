@@ -18,6 +18,7 @@
       boxes
       <button ng-click="list.addItem();">Add Item</button>
       <ol>
+        <!-- Mapping the data of list items  -->
         <li ng-repeat="item in list.items">
           {{ item.quantity }} boxes of {{ item.name }}
           <button ng-click="list.removeItem($index);">Remove Item</button>
