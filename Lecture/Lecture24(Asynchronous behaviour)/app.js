@@ -52,6 +52,7 @@
     //   });
     // };
 
+    // the service to add new item
     // service.addItem = function (name, quantity) {
     //   var promise = WeightLossFilterService.checkName(name);
     //
