@@ -24,7 +24,7 @@
       ShoppingListService.removeItem(itemIndex);
     };
   }
-
+  // injecting WeightLossFilterService into our ShoppingListService
   ShoppingListService.$inject = ["$q", "WeightLossFilterService"];
   function ShoppingListService($q, WeightLossFilterService) {
     var service = this;
