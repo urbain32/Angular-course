@@ -78,23 +78,23 @@
           console.log(errorResponse.message);
         });
     };
+    // adding service using the better code
+    // service.addItem = function (name, quantity) {
+    //   var namePromise = WeightLossFilterService.checkName(name);
+    //   var quantityPromise = WeightLossFilterService.checkQuantity(quantity);
 
-    service.addItem = function (name, quantity) {
-      var namePromise = WeightLossFilterService.checkName(name);
-      var quantityPromise = WeightLossFilterService.checkQuantity(quantity);
-
-      $q.all([namePromise, quantityPromise])
-        .then(function (response) {
-          var item = {
-            name: name,
-            quantity: quantity,
-          };
-          items.push(item);
-        })
-        .catch(function (errorResponse) {
-          console.log(errorResponse.message);
-        });
-    };
+    //   $q.all([namePromise, quantityPromise])
+    //     .then(function (response) {
+    //       var item = {
+    //         name: name,
+    //         quantity: quantity,
+    //       };
+    //       items.push(item);
+    //     })
+    //     .catch(function (errorResponse) {
+    //       console.log(errorResponse.message);
+    //     });
+    // };
 
     service.removeItem = function (itemIndex) {
       items.splice(itemIndex, 1);
