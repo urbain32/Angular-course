@@ -61,29 +61,12 @@
     // };
 
     // adding service using the better code
-    service.addItem = function (name, quantity) {
-      var promise = WeightLossFilterService.checkName(name);
-      promise
-        .then(function (response) {
-          return WeightLossFilterService.checkQuantity(quantity);
-        })
-        .then(function (response) {
-          var item = {
-            name: name,
-            quantity: quantity,
-          };
-          items.push(item);
-        })
-        .catch(function (errorResponse) {
-          console.log(errorResponse.message);
-        });
-    };
-    // adding service using the better code
     // service.addItem = function (name, quantity) {
-    //   var namePromise = WeightLossFilterService.checkName(name);
-    //   var quantityPromise = WeightLossFilterService.checkQuantity(quantity);
-
-    //   $q.all([namePromise, quantityPromise])
+    //   var promise = WeightLossFilterService.checkName(name);
+    //   promise
+    //     .then(function (response) {
+    //       return WeightLossFilterService.checkQuantity(quantity);
+    //     })
     //     .then(function (response) {
     //       var item = {
     //         name: name,
@@ -95,6 +78,24 @@
     //       console.log(errorResponse.message);
     //     });
     // };
+    // adding service using the better code
+    service.addItem = function (name, quantity) {
+      var namePromise = WeightLossFilterService.checkName(name);
+      var quantityPromise = WeightLossFilterService.checkQuantity(quantity);
+      // $q helps to check for both service at the same time if one is false
+      // it out out the error which reduce the time to check
+      $q.all([namePromise, quantityPromise])
+        .then(function (response) {
+          var item = {
+            name: name,
+            quantity: quantity,
+          };
+          items.push(item);
+        })
+        .catch(function (errorResponse) {
+          console.log(errorResponse.message);
+        });
+    };
 
     service.removeItem = function (itemIndex) {
       items.splice(itemIndex, 1);
