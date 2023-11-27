@@ -110,7 +110,7 @@
   // our WeightLossFilterService function
   function WeightLossFilterService($q, $timeout) {
     var service = this;
-
+    // service to checkName
     service.checkName = function (name) {
       var deferred = $q.defer();
 
