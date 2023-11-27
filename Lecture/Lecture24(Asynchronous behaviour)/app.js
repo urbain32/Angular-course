@@ -130,7 +130,7 @@
 
       return deferred.promise;
     };
-
+    // service to check quantity
     service.checkQuantity = function (quantity) {
       var deferred = $q.defer();
       var result = {
