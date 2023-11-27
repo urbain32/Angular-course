@@ -33,6 +33,7 @@
     var items = [];
     // the service to add new item
     service.addItem = function (name, quantity) {
+      // checking the name using the weighlosfilterservice
       var promise = WeightLossFilterService.checkName(name);
 
       promise.then(
