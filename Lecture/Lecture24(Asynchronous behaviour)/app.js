@@ -38,6 +38,7 @@
 
       promise.then(
         function (response) {
+          // checking the quantity using the weighlosfilterservice
           var nextPromise = WeightLossFilterService.checkQuantity(quantity);
 
           nextPromise.then(
