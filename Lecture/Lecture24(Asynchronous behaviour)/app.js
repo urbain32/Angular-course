@@ -107,6 +107,7 @@
   }
 
   WeightLossFilterService.$inject = ["$q", "$timeout"];
+  // our WeightLossFilterService function
   function WeightLossFilterService($q, $timeout) {
     var service = this;
 
