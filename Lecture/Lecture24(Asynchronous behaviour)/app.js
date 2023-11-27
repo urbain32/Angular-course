@@ -32,25 +32,31 @@
     // List of shopping items
     var items = [];
     // the service to add new item
-    // service.addItem = function (name, quantity) {
-    //   var promise = WeightLossFilterService.checkName(name);
-    //
-    //   promise.then(function (response) {
-    //     var nextPromise = WeightLossFilterService.checkQuantity(quantity);
-    //
-    //     nextPromise.then(function (result) {
-    //       var item = {
-    //         name: name,
-    //         quantity: quantity
-    //       };
-    //       items.push(item);
-    //     }, function (errorResponse) {
-    //       console.log(errorResponse.message);
-    //     });
-    //   }, function (errorResponse) {
-    //     console.log(errorResponse.message);
-    //   });
-    // };
+    service.addItem = function (name, quantity) {
+      var promise = WeightLossFilterService.checkName(name);
+
+      promise.then(
+        function (response) {
+          var nextPromise = WeightLossFilterService.checkQuantity(quantity);
+
+          nextPromise.then(
+            function (result) {
+              var item = {
+                name: name,
+                quantity: quantity,
+              };
+              items.push(item);
+            },
+            function (errorResponse) {
+              console.log(errorResponse.message);
+            }
+          );
+        },
+        function (errorResponse) {
+          console.log(errorResponse.message);
+        }
+      );
+    };
 
     // the service to add new item
     // service.addItem = function (name, quantity) {
