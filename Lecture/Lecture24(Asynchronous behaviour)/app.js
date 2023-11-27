@@ -63,7 +63,6 @@
     // adding service using the better code
     service.addItem = function (name, quantity) {
       var promise = WeightLossFilterService.checkName(name);
-
       promise
         .then(function (response) {
           return WeightLossFilterService.checkQuantity(quantity);
