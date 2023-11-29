@@ -46,7 +46,7 @@
 
       return response;
     };
-
+    //creating the service to get MenuForCategory
     service.getMenuForCategory = function (shortName) {
       var response = $http({
         method: "GET",
