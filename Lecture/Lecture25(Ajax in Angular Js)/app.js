@@ -37,7 +37,7 @@
   MenuCategoriesService.$inject = ["$http", "ApiBasePath"];
   function MenuCategoriesService($http, ApiBasePath) {
     var service = this;
-
+    // creating the service to get Menu categories
     service.getMenuCategories = function () {
       var response = $http({
         method: "GET",
