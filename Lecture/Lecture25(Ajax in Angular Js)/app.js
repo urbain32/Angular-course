@@ -16,6 +16,7 @@
     promise
       .then(function (response) {
         menu.categories = response.data;
+        console.log("menu.categories", menu.categories);
       })
       .catch(function (error) {
         console.log("Something went terribly wrong.");
